@@ -1,0 +1,6 @@
+---
+- set_fact:
+    prod_name: "IS_VM"
+
+- debug:
+    msg: "{{ prod_name['zeek']['devices'] }}"

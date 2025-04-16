@@ -1,0 +1,5 @@
+---
+IS_VM:
+  zeek:
+    devices: "{{ ansible_product_name }}"
+  suricata: "working"
