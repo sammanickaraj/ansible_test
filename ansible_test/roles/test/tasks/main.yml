@@ -1,6 +1,5 @@
 ---
 - set_fact:
-    prod_name: "IS_VM"
-
+    prod_name: "{% if ansible_env['VM'] %}IS_VM{% else %}{{ ansible_env['sku'] }}{% endif %}"
 - debug:
     msg: "{{ prod_name['zeek']['devices'] }}"
